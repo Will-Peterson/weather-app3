@@ -3,7 +3,7 @@ import './WeatherDisplay.css';
 
 function WeatherDisplay() {
     return (
-        <div>
+        <div className='weather-display-container'>
             Weather Display
         </div>
     );

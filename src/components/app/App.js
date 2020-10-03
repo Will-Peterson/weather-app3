@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import QueryInput from '../queryinput/QueryInput';
+import Location from '../location/Location';
 import TimeAndPlace from '../timeandplace/TimeAndPlace';
 import WeatherDisplay from '../weatherdisplay/WeatherDisplay'; 
 
 function App() {
   return (
     <div className="main-container">
-      <QueryInput />
+      <Location />
       <TimeAndPlace />
       <WeatherDisplay />
     </div>
