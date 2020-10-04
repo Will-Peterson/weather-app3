@@ -4,11 +4,11 @@ import './DateTimeDisplay.css';
 function DateTimeDisplay() {
     return (
         <div className='datetime-container'>
-            <div>MONDAY</div>
+            <div className='day-of-week'>Monday</div>
             <hr />
-            <div>October 03, 2020</div>
+            <div className='date'>October 03, 2020</div>
             <hr />
-            <div>6:18 PM</div>
+            <div className='time'>6:18 PM</div>
         </div>
     );
 }

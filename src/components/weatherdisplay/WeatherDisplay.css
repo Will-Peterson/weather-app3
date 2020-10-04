@@ -1,6 +1,31 @@
 .weather-container {
-    background-color: coral;
+    background-color: antiquewhite;
     border-radius: 15px;
     width: 215px;
     height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.degrees {
+    margin: 25px 0 10px 0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.forcast-img {
+    text-align: center;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+}
+
+.forcast {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
