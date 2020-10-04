@@ -1,8 +1,15 @@
-.main-container {
+.app-container {
     background-color: bisque;
-    width: 30%;
-    height: 400px;
-    border-radius: 2%;
+    width: 430px;
+    height: 275px;
+    border-radius: 15px;
     margin: 50px auto 0;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.datetime-weather-container {
+    justify-content: space-around;
     display: flex;
 }

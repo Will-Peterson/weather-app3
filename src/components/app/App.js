@@ -1,15 +1,17 @@
 import React from 'react';
 import './App.css';
-import Location from '../location/Location';
-import TimeAndPlace from '../timeandplace/TimeAndPlace';
-import WeatherDisplay from '../weatherdisplay/WeatherDisplay'; 
+import LocationDisplay from '../LocationDisplay/LocationDisplay';
+import DateTimeDisplay from '../DateTimeDisplay/DateTimeDisplay';
+import WeatherDisplay from '../WeatherDisplay/WeatherDisplay'; 
 
 function App() {
   return (
-    <div className="main-container">
-      <Location />
-      <TimeAndPlace />
-      <WeatherDisplay />
+    <div className="app-container">
+      <LocationDisplay />
+      <div className='datetime-weather-container'>
+        <DateTimeDisplay />
+        <WeatherDisplay />
+      </div>
     </div>
   );
 }
