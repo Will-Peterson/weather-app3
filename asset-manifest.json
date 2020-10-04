@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.869abc99.chunk.css",
-    "main.js": "/static/js/main.ea97d0d8.chunk.js",
-    "main.js.map": "/static/js/main.ea97d0d8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.33336675.js",
-    "runtime-main.js.map": "/static/js/runtime-main.33336675.js.map",
-    "static/js/2.4791a421.chunk.js": "/static/js/2.4791a421.chunk.js",
-    "static/js/2.4791a421.chunk.js.map": "/static/js/2.4791a421.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.1efd14d65b05bb382f5e47ac54b69225.js": "/precache-manifest.1efd14d65b05bb382f5e47ac54b69225.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.869abc99.chunk.css.map": "/static/css/main.869abc99.chunk.css.map",
-    "static/js/2.4791a421.chunk.js.LICENSE.txt": "/static/js/2.4791a421.chunk.js.LICENSE.txt",
-    "static/media/wi-alien.svg": "/static/media/wi-alien.531b634c.svg"
+    "main.css": "/weather-app3/static/css/main.869abc99.chunk.css",
+    "main.js": "/weather-app3/static/js/main.ea97d0d8.chunk.js",
+    "main.js.map": "/weather-app3/static/js/main.ea97d0d8.chunk.js.map",
+    "runtime-main.js": "/weather-app3/static/js/runtime-main.5779d4c7.js",
+    "runtime-main.js.map": "/weather-app3/static/js/runtime-main.5779d4c7.js.map",
+    "static/js/2.4791a421.chunk.js": "/weather-app3/static/js/2.4791a421.chunk.js",
+    "static/js/2.4791a421.chunk.js.map": "/weather-app3/static/js/2.4791a421.chunk.js.map",
+    "index.html": "/weather-app3/index.html",
+    "precache-manifest.5148d6f22fd11d9857617c0a7aa136d6.js": "/weather-app3/precache-manifest.5148d6f22fd11d9857617c0a7aa136d6.js",
+    "service-worker.js": "/weather-app3/service-worker.js",
+    "static/css/main.869abc99.chunk.css.map": "/weather-app3/static/css/main.869abc99.chunk.css.map",
+    "static/js/2.4791a421.chunk.js.LICENSE.txt": "/weather-app3/static/js/2.4791a421.chunk.js.LICENSE.txt",
+    "static/media/wi-alien.svg": "/weather-app3/static/media/wi-alien.531b634c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.33336675.js",
+    "static/js/runtime-main.5779d4c7.js",
     "static/js/2.4791a421.chunk.js",
     "static/css/main.869abc99.chunk.css",
     "static/js/main.ea97d0d8.chunk.js"
