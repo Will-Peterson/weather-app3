@@ -11,9 +11,12 @@ function App() {
       <div className='datetime-weather-container'>
         <DateTimeDisplay />
         <WeatherDisplay />
+        
       </div>
     </div>
   );
 }
+// let position = navigator.geolocation.getCurrentPosition();
+// console.log(position)
 
 export default App;
