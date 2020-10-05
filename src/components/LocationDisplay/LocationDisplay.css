@@ -10,3 +10,28 @@
     font-weight: 700;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.location-container div {
+    display: flex;
+}
+.location-container button  {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-bar {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: inherit;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.search-bar::-webkit-input-placeholder {
+    font-size: 1.2rem;
+    color: #888;
+    opacity: .6;
+ }

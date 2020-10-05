@@ -1,37 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './LocationDisplay.css';
 
-// const [latitude, getLatitude] = useState('');
-// const [longitude, getLongitude] = useState('');
-let latitude = '';
-let longitude = '';
+const LocationDisplay = () => {
 
-if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(geoPosition);
-} else {
-    console.log('no connection');
+const [search, setSearch] = useState('');
+
+function updateSearch(e) {
+    setSearch(e.target.value);
 }
 
-function geoPosition(position) {
-    latitude = position.coords.latitude;
-    longitude = position.coords.longitude;
-}
-
-function LocationDisplay() {
     return (
         <div className='location-container'>
-            {latitude}<br/>
-            {longitude}
-            {/* Your latitude: {latitude}<br />
-            Your longitude: {longitude} */}
+            <input 
+                type='text'
+                placeholder='location...' 
+                name='location'
+                className='search-bar'
+                onChange={updateSearch}
+            />
+            <button className='material-icons'>search</button>
         </div>
-         
-  
-
-        
-        
     );
 }
-// console.log(navigator.geolocation.getCurrentPosition());
 
 export default LocationDisplay;
