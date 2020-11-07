@@ -1,6 +1,7 @@
 import React from 'react';
 import './WeatherDisplay.css';
 import Alien from '../../images/wi-alien.svg';
+import LocationDisplay from '../LocationDisplay/LocationDisplay';
 
 function WeatherDisplay() {
     return (
