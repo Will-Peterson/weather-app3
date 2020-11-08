@@ -1,29 +1,20 @@
 import React, { useState } from "react";
-import "./App.css";
+// import "./App.css";
 import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import FilledInput from '@material-ui/core/FilledInput';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import Chip from '@material-ui/core/Chip';
 import Icon from '@material-ui/core/Icon';
+import Paper from '@material-ui/core/Paper';
 
 const api = {
   key: "92c5b33d068b27b720de1e01cb7c3c38",
   url: "https://api.openweathermap.org/data/2.5/weather?q=",
 };
 
-const useStyles = makeStyles({
-  inputStyle: {
-  },
-  titleStyle: {
-  },
-  toolbarStyle: {
-  },
-  spanStyle: {
-  }
-});
 
 function App() {
   const [query, setQuery] = useState("");
@@ -40,39 +31,98 @@ function App() {
   const [humidity, setHumidity] = useState('');
   const [windSpeed, setWindSpeed] = useState('');
   const [windDeg, setWindDeg] = useState('');
-
+  
   const search = (e) => {
     if (e.key === "Enter") {
       fetch(`${api.url}${query}&units=imperial&appid=${api.key}`)
-        .then((res) => res.json())
-        .then((result) => {
-          setWeather(result);
-          setCity(result.name);
-          setTemp(result.main.temp);
-          setCountry(result.sys.country);
-          setConditionsMain(result.weather[0].main);
-          setConditionsDescription(result.weather[0].description);
-          setWeatherIcon(result.weather[0].icon);
-          setLongitude(result.coord.lon);
-          setLatitude(result.coord.lat);
-          setPressure(result.main.pressure);
-          setHumidity(result.main.humidity);
-          setWindSpeed(result.wind.speed);
-          setWindDeg(result.wind.deg);
-          setQuery("");
-        });
+      .then((res) => res.json())
+      .then((result) => {
+        setWeather(result);
+        setCity(result.name);
+        setTemp(result.main.temp);
+        setCountry(result.sys.country);
+        setConditionsMain(result.weather[0].main);
+        setConditionsDescription(result.weather[0].description);
+        setWeatherIcon(result.weather[0].icon);
+        setLongitude(result.coord.lon);
+        setLatitude(result.coord.lat);
+        setPressure(result.main.pressure);
+        setHumidity(result.main.humidity);
+        setWindSpeed(result.wind.speed);
+        setWindDeg(result.wind.deg);
+        setQuery("");
+      });
     }
     return weather;
   };
 
+  const useStyles = makeStyles({
+    inputStyle: {
+    },
+    titleStyle: {
+    },
+    toolbarStyle: {
+    },
+    spanStyle: {
+    },
+    paper: {
+      backgroundColor: '#ffb04c',
+
+    }
+  });
+  
   const classes = useStyles();
   
   return (
-    <Container 
-      maxWidth='sm'
-    >
+    <div style={{}}>
 
-    <div className="app-container">
+    <div style={{}} >
+
+    <Grid 
+      style={{borderRadius: '5px', margin: 'auto', marginTop: '50px', width: '600px', background: '#f57f17', alignItems: 'center'}}
+      spacing={3} 
+      direction='column' 
+      container
+      item
+      xs={12}
+    >
+      <Paper xs={12} >
+
+      <Grid item xs={12}>
+        <Paper elevation={2} xs={12} style={{}} className={classes.paper}>sacramento</Paper>
+      </Grid>
+      <Grid item xs={12}>
+        <Paper elevation={5} xs={12} className={classes.paper}>sacramento</Paper>
+      </Grid>
+
+      <Grid
+        style={{textAlign: 'center', alignItems:'center'}} 
+        spacing={3} 
+        container 
+        item 
+        xs={12}
+        >
+        <Grid sytle={{}} item xs={6}>
+          <Paper elevation={5} xs={12} style={{color: '#212121',fontWeight: 'bold' , fontSize: '6rem', width: '175px', height: '200px'}} className={classes.paper}>72°</Paper>
+        </Grid>
+        <Grid item xs={6}>
+          <Paper elevation={5} xs={12} style={{height: '200px', width: '175px'}} className={classes.paper}>SUN ICON</Paper>
+        </Grid>
+
+        <Grid item xs={6}>
+          <Paper elevation={5} xs={12} style={{height: '200px', width: '175px'}} className={classes.paper}>NE 3mph</Paper>
+        </Grid>
+        <Grid item xs={6}>
+          <Paper elevation={5} xs={12} style={{height: '200px', width: '175px'}} className={classes.paper}>Pressure</Paper>
+        </Grid>
+      </Grid>
+
+    </Paper>
+    </Grid>
+    </div>
+
+
+<br/><br/><br/><br/>
 
       {/**
        * SECTION 1
@@ -150,7 +200,7 @@ function App() {
       </div>
 
     </div>
-    </Container>
+
   );
 }
 export default App;
