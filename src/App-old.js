@@ -11,7 +11,7 @@ import Icon from '@material-ui/core/Icon';
 import Paper from '@material-ui/core/Paper';
 
 const api = {
-  key: "92c5b33d068b27b720de1e01cb7c3c38",
+  key: process.env.REACT_APP_WEATHER_API_KEY,
   url: "https://api.openweathermap.org/data/2.5/weather?q=",
 };
 
